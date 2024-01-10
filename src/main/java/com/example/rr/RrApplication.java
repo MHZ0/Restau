@@ -20,7 +20,7 @@ public class RrApplication {
         OrderRepo orderRepo = cx.getBean(OrderRepo.class);
 //        orderRepo.save(new Order(null,1,"Coca Cola + Pizza","Ready",15));
         MDRepo mdRepo = cx.getBean(MDRepo.class);
-        mdRepo.save(new MealsAndDrinks(1L,"Pizza ","Large Pizza Margarita","/images/pm.jpg",15));
+        mdRepo.save(new MealsAndDrinks(1L,"Pizza Margarita","Large Pizza Margarita","/images/pm.jpg",15));
         mdRepo.save(new MealsAndDrinks(2L,"Pizza 4S","Large Italian 4 Season Pizza","/images/p4.jpg",20));
         mdRepo.save(new MealsAndDrinks(3L,"Pasta","Italian Pasta","/images/pasta.jpg",10));
         mdRepo.save(new MealsAndDrinks(4L,"Salade","Green salade with dark bred and olive","/images/salade.jpg",5));
