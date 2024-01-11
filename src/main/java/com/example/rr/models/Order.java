@@ -32,6 +32,15 @@ public class Order {
     @Column(name = "bill")
     float bill;
 
+    public float calculateTotalBill() {
+        float totalBill = 0;
+        if (mealsAndDrinks != null) {
+            for (MealsAndDrinks item : mealsAndDrinks) {
+                totalBill += item.getPrice();
+            }
+        }
+        return totalBill;
+    }
 
 
 //    @ElementCollection
@@ -42,16 +51,6 @@ public class Order {
 //    @Column(name = "mealsAndDrinks")
 //    String mealsOrDrinksName;
 
-
-    public float calculateTotalBill() {
-        float totalBill = 0;
-        if (mealsAndDrinks != null) {
-            for (MealsAndDrinks item : mealsAndDrinks) {
-                totalBill += item.getPrice();
-            }
-        }
-        return totalBill;
-    }
 
 
     //    @ManyToMany(cascade = CascadeType.ALL)
@@ -70,9 +69,6 @@ public class Order {
 //        String description;
 //        double price;
 //    }
-
-
-
 
 
 }

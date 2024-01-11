@@ -9,5 +9,5 @@ import java.util.Optional;
 public interface MDRepo extends JpaRepository<MealsAndDrinks,Long> {
 
     Optional<MealsAndDrinks> findByName(String name);
-    //float getPrice();
+
 }
