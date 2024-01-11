@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import Header from './components/Header';
 import Rmenu from './components/Rmenu';
-import RmenuTest from './components/RmenuTest';
+
 
 function App() {
   return (
@@ -9,8 +8,7 @@ function App() {
       <header className="">
         <Header />
       </header>
-     {/* <Rmenu />  */}
-     <RmenuTest />
+     <Rmenu />
      <footer className='bg-yellow-700'>
         <div className='text-center text-white'>
           <p>© 2023 - 2024</p>
